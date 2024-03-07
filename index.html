@@ -13,8 +13,13 @@
             <span style="color: gold;">Icons,</span> <span style="color: cyan;">Fonts,</span> <span style="color: chartreuse;">Images,
             </span> and <span style="color: red;">Tools</span></h1>
     </div>
+    
+    <div style="display: flex;"> 
+        <span><a style="color: black; text-decoration: none; font-size: 2.5em;" class="fa-solid fa-plus" href="https://forms.gle/381BBcxhEMCWKj37A" target="_blank"></a></span>
+    </div>
+    
     <div style="padding-top: 100px; padding-left: 30px; padding-bottom: 50px">
-        <ul style="font-size: x-large; font-weight: 500; ;">
+        <ul style="font-size: x-large; font-weight: 500;">
             <li><a style="color: cyan;" href="https://fonts.google.com/" target="_blank">Google Fonts</a> - 1,580+ Font Families to choose from and embed into your project </li>
             <br>
             <li><a style="color: gold;" href="https://fontawesome.com/icons" target="_blank">Font Awesome</a> - 30,000+ Free Icons to decorate your website using one line of code</li>
@@ -39,7 +44,7 @@
             <br>
             <br>
             <br>
-            <br>
+            
             <br>
         </ul>
     </div>
@@ -91,6 +96,31 @@
             background-color: #444444;
         }
 
+        .fa-plus {
+            display: grid;
+            justify-content: end;
+            justify-items: end;
+            align-content: end;
+            align-items: end;
+            position: fixed;
+            bottom: 5vh;
+            right: 5vh;
+            background-color: #333;
+            margin: 0;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            border: 5px solid #333;
+            border-radius: 50%;
+            transition: transform 0.2s;
+        }
+
+        .fa-plus:hover {
+            transform: rotate(90deg);
+            border-color: #2b2b2b;
+            background-color: #2b2b2b;
+        }
+        
     </style>
     <script src="https://kit.fontawesome.com/4fc295af45.js" crossorigin="anonymous"></script>
 </body>
