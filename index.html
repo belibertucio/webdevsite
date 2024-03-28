@@ -10,19 +10,19 @@
    <div>
         <h1 style="font-weight: 500; position: fixed; background-color: #333; border-end-end-radius: 25px; padding: 20px; margin-top: 0;">
             <i style="padding-right: 25px;" class="fa-solid fa-code"></i><u>Web Development Useful Links</u> - 
-            <span style="color: gold;">Icons,</span> <span style="color: cyan;">Fonts,</span> <span style="color: chartreuse;">Images,
+            <span style="color: gold;">Icons,</span> <span style="color: cyan;">Fonts,</span> <span style="color: chartreuse;">Guides,
             </span> and <span style="color: red;">Tools</span></h1>
     </div>
     
     <div style="display: flex;"> 
-        <span><a style="color: black; text-decoration: none; font-size: 2.5em;" class="fa-solid fa-plus" href="https://forms.gle/381BBcxhEMCWKj37A" target="_blank"></a></span>
+        <span><a style="color: black; text-decoration: none; font-size: 2.5em;" class="fa-solid fa-pencil" href="https://forms.gle/381BBcxhEMCWKj37A" title="Find any issue with this page? Fix it on Github!" target="_blank"></a></span>
     </div>
     
     <div style="padding-top: 100px; padding-left: 30px; padding-bottom: 50px">
         <ul style="font-size: x-large; font-weight: 500;">
             <li><a style="color: cyan;" href="https://fonts.google.com/" target="_blank">Google Fonts</a> - 1,580+ Font Families to choose from and embed into your project </li>
             <br>
-            <li><a style="color: gold;" href="https://fontawesome.com/icons" target="_blank">Font Awesome</a> - 30,000+ Free Icons to decorate your website using one line of code</li>
+            <li><a style="color: gold;" href="https://fontawesome.com/icons" target="_blank">Font Awesome</a> - 30,000+ Smooth Icons to decorate your website using one line of code</li>
             <br>
             <li><a style="color: red;" href="https://cubic-bezier.com/" target="_blank">CubicBezier.com</a> - Online Tool to help handling Animations with cubic-bezier in CSS</li>
             <br>
@@ -32,7 +32,7 @@
             <br>
             <li><a style="color: chartreuse;" href="https://pbs.twimg.com/media/FalW9gGVUAIUlJH.jpg" target="_blank">CSS - Grid Explained</a> - CSS Grid Layout Full Guide</li>
             <br>
-            <br>
+            <li><a style="color: chartreuse;" href="https://www.w3schools.com/cssref/index.php" target="_blank">CSS Properties</a> - All CSS Properties Full Guide</li>
             <br>
             <br>
             <br>
@@ -73,10 +73,18 @@
 
         li {
             transition: transform 0.5s;
+            letter-spacing: normal;
+            transition: all 0.3s;
         }
 
         li:hover {
             transform: scale(1.01);
+            letter-spacing: 0.1px;
+            transition: all 0.5s;
+        }
+
+        li:active {
+            color: #555;
         }
 
         .IconS:active {
@@ -95,7 +103,7 @@
             background-color: #444444;
         }
 
-        .fa-plus {
+        .fa-pencil {
             display: grid;
             justify-content: end;
             justify-items: end;
@@ -109,15 +117,16 @@
             height: 50px;
             width: 50px;
             text-align: center;
-            border: 5px solid #333;
+            border: 15px solid #333;
             border-radius: 50%;
-            transition: transform 0.2s;
+            transition: transform ease 0.5s;
         }
 
-        .fa-plus:hover {
-            transform: rotate(90deg);
+        .fa-pencil:hover {
+            transform: scale(1.1) rotate(360deg);
             border-color: #2b2b2b;
             background-color: #2b2b2b;
+            box-shadow: 0 0 15px #111;
         }
         
     </style>
