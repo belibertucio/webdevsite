@@ -1,0 +1,67 @@
+.IconS {
+    transition: all 0.25s;
+}
+
+.IconS:hover {
+    color: #222;
+    transform: scale(1.1);
+}
+
+li {
+    transition: transform 0.5s;
+    letter-spacing: normal;
+    transition: all 0.3s;
+}
+
+li:hover {
+    font-size: 25px;
+    letter-spacing: 0.25px;
+    transition: all 0.5s;
+    cursor: default;
+}
+
+li:active {
+    color: #555;
+}
+
+.IconS:active {
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #444444;
+}
+
+.fa-wrench {
+    display: grid;
+    background-color: #333;
+    justify-content: end;
+    justify-items: end;
+    align-content: end;
+    align-items: end;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    text-align: center;
+    border: 15px solid #333;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+
+.fa-wrench:hover {
+    transform: scale(1.1) rotate(360deg);
+    border-color: #2b2b2b;
+    background-color: #2b2b2b;
+    box-shadow: 0 0 15px #111;
+}
